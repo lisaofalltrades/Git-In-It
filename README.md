@@ -159,6 +159,12 @@ git br
 ```
 
 #### git config --global alias.ci commit
+```bash
+#turns
+git commit -a "Your commit message"
+#to
+git ci -a "Your commit message"
+```
 
 #### git config --global alias.st status
 ```bash
