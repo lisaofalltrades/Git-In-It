@@ -17,7 +17,7 @@ Creates a new branch. It's recommended to create a new branch per feature. When 
 # git checkout -b <new_branch>
 git checkout -b submit-btn
 
-#git checkout -b <user_initial-new_branch>
+#git checkout -b <new_branch -user_initial>
 git checkout -b new-user-form-LN
 ```
 
@@ -82,12 +82,17 @@ Shows history of commits.
 git log
 ```
 #### git remote add origin <remote_repo_url>
-
+Adds a remote repository to a git folder.
 ```bash
 # Git add remote repo
 git remote add origin https://github.com/try-git/try_git.git
 ```
-
+#### git remote rm origin
+Removes remote repo from Git folder. *Please check with your lead before running this command.*
+```bash
+# Git remove remote repo
+git remote rm origin https://github.com/try-git/try_git.git
+```
 #### git push origin master
 Pushes master branch to remote repo. Though, if you created a deployment branch to test merge conflicts, the command will be:
 ```bash
@@ -155,13 +160,13 @@ Date:   Tue Jun 27 09:43:30 2017 -0700
 ### Avoiding Merge Conflicts
 
 1. Group chat
-Starting a group chat is a great way to keep everyone on the same page. It's great place to announce what features you're taking next and to ask for help. I like to announce when I've pushed to deployment so my teammates can pull the latest changes.
+* Starting a group chat is a great way to keep everyone on the same page. It's great place to announce what features you're taking next and to ask for help. I like to announce when I've pushed to deployment so my teammates can pull the latest changes.
 
 2. Pull before push!
-Though you should pull changes from the remote repo before making changes on your local repo, it's possible a teammate has pushed changes to the remote repo while you were working. It's best practice to pull all changes from the remote repo before pushing up changes from your local repo. Remember to tell your team you've pushed!
+* Though you should pull changes from the remote repo before making changes on your local repo, it's possible a teammate has pushed changes to the remote repo while you were working. It's best practice to pull all changes from the remote repo before pushing up changes from your local repo. Remember to tell your team you've pushed!
 
 3. NEVER PUSH TO MASTER
-Create a new deployment branch before making any changes. Use this deployment branch to check merge conflicts. Once all branches are merged into the deployment branch and all is fine, THEN push to master for production.
+* Create a new deployment branch before making any changes. Use this deployment branch to check merge conflicts. Once all branches are merged into the deployment branch and all is fine, THEN push to master for production.
 
 ## Want to learn more?
 If you'd like to go into more depth, try [Git Real](http://gitreal.codeschool.com/?utm_source=github&utm_medium=codeschool_option&utm_campaign=trygit) with Code School or Codecademy's [tutorial](https://www.codecademy.com/learn/learn-git). It will take a few hours.
