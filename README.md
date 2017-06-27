@@ -140,14 +140,33 @@ git commit -m "created README.md file"
 - When typing in a file name, you can press TAB after a few letters, the terminal will guess the file name. If there are multiple names, terminal will display all files that match the first couple of letters you've typed. File names are case sensitive.
 
 ### Git Aliases
+Creating aliases will save you time by allowing you to type shortcuts.
 
 #### git config --global alias.co checkout
+```bash
+#turns
+git checkout
+#to
+git co
+```
 
 #### git config --global alias.br branch
+```bash
+#turns
+git branch
+#to
+git br
+```
 
 #### git config --global alias.ci commit
 
 #### git config --global alias.st status
+```bash
+#turns
+git status
+#to
+git st
+```
 
 #### git config --global alias.last 'log -1 HEAD'
 ```bash
