@@ -161,9 +161,9 @@ git br
 #### git config --global alias.ci commit
 ```bash
 #turns
-git commit -a "Your commit message"
+git commit -m "Your commit message"
 #to
-git ci -a "Your commit message"
+git ci -m "Your commit message"
 ```
 
 #### git config --global alias.st status
@@ -199,7 +199,7 @@ Date:   Tue Jun 27 09:43:30 2017 -0700
 * Though you should pull changes from the remote repo before making changes on your local repo, it's possible a teammate has pushed changes to the remote repo while you were working. It's best practice to pull all changes from the remote repo before pushing up changes from your local repo. Remember to tell your team you've pushed!
 
 3. NEVER PUSH TO MASTER
-* Create a new deployment branch before making any changes. Use this deployment branch to check merge conflicts. Once all branches are merged into the deployment branch and all is fine, THEN push to master for production.
+* Create a new deployment branch before making any changes. Use this deployment branch to check merge conflicts. Once all branches are merged into the deployment branch and all is fine, THEN merge the deployment branch into the master branch.
 
 ## Want to learn more?
 If you'd like to go into more depth, try [Git Real](http://gitreal.codeschool.com/?utm_source=github&utm_medium=codeschool_option&utm_campaign=trygit) with Code School or Codecademy's [tutorial](https://www.codecademy.com/learn/learn-git). It will take a few hours.
