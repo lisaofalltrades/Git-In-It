@@ -167,9 +167,17 @@ git status
 #to
 git st
 ```
+#### git config --global alias.a add
+```bash
+#turns
+git add <file_name>
+#to
+git a <file_name>
+```
 
 #### git config --global alias.last 'log -1 HEAD'
 ```bash
+#git last to show last commit
 git last
 commit 66bb74542905b760f8b319b00739800d5ecaaef1
 Author: Lisa <lnguyen6@apple.com>
