@@ -1,15 +1,6 @@
 # Git-In-It (draft)
 Git basics and common commands. Your one-stop-shop to all things Git!
 
-#### git reset
-Unstages local files that were staged in git add.
-```bash
-# Unstages specific file
-git reset script.py
-
-# Unstages all files
-git reset
-```
 #### git checkout -b
 Creates a new branch. It's recommended to create a new branch per feature. When working in groups, it's helpful to add your initials to the branch name. This helps teammates quickly identify who is working on what features.
 
@@ -37,6 +28,22 @@ git branch
 
 # git checkout <branch_name> to switch between existing branches
 git checkout new-user-form-LN
+```
+
+#### git reset
+Unstages local files that were staged in git add.
+```bash
+# Unstages specific file
+git reset script.py
+
+# Unstages all files
+git reset
+```
+
+#### git reset --hard HEAD
+```bash
+# throws away all your uncommitted changes
+git reset --hard HEAD
 ```
 
 #### git merge <branch_name>
