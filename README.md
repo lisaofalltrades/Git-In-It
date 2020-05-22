@@ -1,4 +1,4 @@
-# Git-In-It (draft)
+# Git-In-It\
 Git basics and common commands. Your one-stop-shop to all things Git!
 
 #### git checkout -b
@@ -133,6 +133,15 @@ Resets file to last commit.
 
 ```bash
 git checkout -- myfile.py
+```
+### Please enter a commit message
+
+```
+press "i"
+write your merge message
+press "esc"
+write ":wq"
+then press enter
 ```
 
 ## Tips
